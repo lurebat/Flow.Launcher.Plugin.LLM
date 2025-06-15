@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <AssemblyName>Flow.Launcher.Plugin.LLM</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.LLM</PackageId>
+    <Authors>lurebat</Authors>
+    <PackageProjectUrl>https://github.com/lurebat/Flow.Launcher.Plugin.LLM</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lurebat/Flow.Launcher.Plugin.LLM</RepositoryUrl>
+    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <OutputPath>C:\Users\asafmahlev\AppData\Roaming\FlowLauncher\Plugins\LLM</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>C:\Users\asafmahlev\AppData\Roaming\FlowLauncher\Plugins\LLM</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Plugin" Version="4.4.0" />
+    <PackageReference Include="OpenAI" Version="2.2.0-beta.4" />
+  </ItemGroup>
+
+</Project>

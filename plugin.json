@@ -1,0 +1,13 @@
+{
+    "$schema": "https://www.flowlauncher.com/schemas/plugin.schema.json",
+    "ID": "D4954E4E431548DEA18606EB816E2E2C",
+    "ActionKeyword": "ai",
+    "Name": "LLM",
+    "Description": "Flow Launcher plugin for interacting with Large Language Models (LLMs) like OpenAI's GPT.",
+    "Author": "lurebat",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/lurebat/Flow.Launcher.Plugin.LLM",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.LLM.dll"
+}
