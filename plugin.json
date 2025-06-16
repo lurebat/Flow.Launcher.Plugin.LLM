@@ -8,6 +8,6 @@
     "Version": "1.0.0",
     "Language": "csharp",
     "Website": "https://github.com/lurebat/Flow.Launcher.Plugin.LLM",
-    "IcoPath": "icon.png",
+    "IcoPath": "https://github.com/lurebat/Flow.Launcher.Plugin.LLM/blob/c3dd5fcabea9dec01c00063441ff3a0f741123a7/images/app.png",
     "ExecuteFileName": "Flow.Launcher.Plugin.LLM.dll"
 }
